@@ -1,0 +1,45 @@
+/* kanbanboard.css */  
+.kanban-container {  
+    font-family: Arial, sans-serif; /* Set the font for the whole container */  
+}  
+
+h1 {  
+    color: #2a9df4; /* Title color */  
+    margin-bottom: 20px; /* Space below the title */  
+}  
+
+.controls {  
+    margin-bottom: 20px; /* Space below the controls section */  
+}  
+
+.kanban-board {  
+    display: flex; /* Align all columns horizontally */  
+    justify-content: space-around; /* Distribute space evenly */  
+}  
+
+.kanban-column {  
+    background-color: #f4f4f4; /* Background color for columns */  
+    width: 200px; /* Fixed width for each column */  
+    padding: 10px;  
+    border: 1px solid #ddd; /* Border for columns */  
+    border-radius: 4px; /* Rounded corners for columns */  
+}  
+
+h2 {  
+    background-color: #2a9df4; /* Header background color */  
+    color: white; /* Header text color */  
+    padding: 5px; /* Padding around header text */  
+}  
+
+ul {  
+    list-style-type: none; /* Remove default list styling */  
+    padding: 0; /* Remove padding */  
+}  
+
+li {  
+    background-color: #ffffff; /* Background color for tasks */  
+    margin: 5px 0; /* Margin between tasks */  
+    padding: 10px; /* Padding inside tasks */  
+    border: 1px solid #ddd; /* Border for tasks */  
+    border-radius: 4px; /* Rounded corners for tasks */  
+}  

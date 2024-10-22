@@ -1,0 +1,29 @@
+/* App.css */  
+.kanban-board {  
+    display: flex;  
+    gap: 20px; /* Space between task groups */  
+    padding: 20px;  
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */  
+}  
+
+.task-group {  
+    flex: 1;  
+    min-width: 300px; /* Minimum width for each task group */  
+    border: 1px solid #ddd; /* Light border around task groups */  
+    padding: 10px;  
+    background-color: #f4f4f4; /* Background color for task groups */  
+    border-radius: 4px; /* Rounded corners for task groups */  
+}  
+
+.task-card {  
+    background-color: #fff; /* Background color for task cards */  
+    margin-bottom: 10px; /* Space between cards */  
+    padding: 10px;  
+    border-radius: 5px; /* Rounded corners for cards */  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */  
+}  
+
+/* Grouping and Sorting Controls */  
+.group-selector {  
+    margin: 10px 0; /* Margin for selectors */  
+}  

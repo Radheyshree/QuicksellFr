@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
+/* App.css */  
+.kanban-board {  
+  display: flex;  
+  gap: 20px; /* Space between task groups */  
+  padding: 20px; /* Padding around the board */  
+  overflow-x: auto; /* Allow horizontal scrolling */  
+  background-color: #f4f4f4; /* Background color for the board */  
+}  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.task-group {  
+  flex: 1; /* Allow groups to grow */  
+  min-width: 300px; /* Minimum width for each group */  
+  border: 1px solid #ddd; /* Light border */  
+  padding: 10px; /* Padding inside groups */  
+  background-color: #ffffff; /* White background for groups */  
+  border-radius: 8px; /* Rounded corners */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.task-card {  
+  background-color: #ffffff; /* White background for cards */  
+  margin-bottom: 10px; /* Space between cards */  
+  padding: 15px; /* Padding inside cards */  
+  border-radius: 5px; /* Rounded corners */  
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Group Selector */  
+.group-selector {  
+  margin: 10px 0; /* Margin for group selector */  
+}  
 
-.App-link {
-  color: #61dafb;
-}
+/* kanbanboard.css */  
+.kanban-container {  
+  font-family: Arial, sans-serif; /* Font for the entire container */  
+}  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {  
+  color: #2a9df4; /* Title color */  
+  margin-bottom: 20px; /* Space below title */  
+}  
+
+.controls {  
+  margin-bottom: 20px; /* Space below controls */  
+}  
+
+/* Kanban Column */  
+.kanban-column {  
+  background-color: #f4f4f4; /* Background color for columns */  
+  width: 300px; /* Fixed width for each column */  
+  padding: 10px; /* Padding inside columns */  
+  border: 1px solid #ddd; /* Border for columns */  
+  border-radius: 4px; /* Rounded corners for columns */  
+}  
+
+/* Column Header */  
+h2 {  
+  background-color: #2a9df4; /* Header background color */  
+  color: white; /* Header text color */  
+  padding: 10px; /* Padding around header text */  
+  border-radius: 4px; /* Rounded corners for header */  
+  margin: 0 0 10px 0; /* Margin below header */  
+}  
+
+/* List Styles */  
+ul {  
+  list-style-type: none; /* Remove default list styling */  
+  padding: 0; /* Remove padding */  
+}  
+
+li {  
+  background-color: #ffffff; /* Background color for tasks */  
+  margin: 5px 0; /* Margin between tasks */  
+  padding: 10px; /* Padding inside tasks */  
+  border: 1px solid #ddd; /* Border for tasks */  
+  border-radius: 4px; /* Rounded corners for tasks */  
+}  
+
+/* Feature Request Tag */  
+.feature-request {  
+  background-color: #e7f3fe; /* Light blue background for feature requests */  
+  border: 1px solid #b3d7ff; /* Light blue border */  
+  border-radius: 4px; /* Rounded corners */  
+  padding: 5px; /* Padding inside tag */  
+  font-size: 12px; /* Font size for tag */  
+}  
+
+/* User Avatar */  
+.user-avatar {  
+  width: 20px; /* Width for user avatar */  
+  height: 20px; /* Height for user avatar */  
+  border-radius: 50%; /* Circular avatar */  
+  margin-left: 5px; /* Space to the left of avatar */  
 }
